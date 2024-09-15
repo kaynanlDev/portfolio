@@ -6,4 +6,104 @@
 
 body {
   width: 100%;
+  background-color: #0d0d0d;
+  font-family: "opens sans", sans-serif;
+}
+body .hero {
+  width: 100%;
+  background: url("../../imgs/background.png") no-repeat center/cover;
+}
+body header .navbar-desktop {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #262626;
+}
+body header .navbar-desktop nav a {
+  text-decoration: none;
+  color: #404040;
+}
+body header .navbar-mobile {
+  display: none;
+}
+body header .menu-mobile {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  body header .navbar-desktop {
+    display: none;
+  }
+  body header .navbar-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+  }
+  body header .navbar-mobile .email {
+    width: 32px;
+    height: 32px;
+  }
+  body header .navbar-mobile .email img {
+    width: 100%;
+    height: 100%;
+  }
+  body header .navbar-mobile .menu {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+  body header .navbar-mobile .menu img {
+    width: 100%;
+    height: 100%;
+  }
+  body header .menu-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 92px 24px;
+    display: none;
+    background-color: #404040;
+    width: 60vh;
+    height: 100vh;
+  }
+  body header .menu-mobile nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 32px;
+  }
+  body header .menu-mobile a {
+    position: relative;
+    padding: 16px;
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+  }
+  body header .menu-mobile .menu-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+  body header .menu-mobile .menu-close img {
+    width: 100%;
+    height: 100%;
+  }
+}
+body .email a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #404040;
+}
+body .email a img {
+  width: 24px;
+  height: 24px;
 }/*# sourceMappingURL=style.css.map */

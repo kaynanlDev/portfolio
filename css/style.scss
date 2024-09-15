@@ -1,5 +1,5 @@
-@mixin responsivi($breakpoint){
-    @media screen and (max-width: $breakpoint){
+@mixin responsivi(){
+    @media screen and (max-width: 640px){
         @content;
     }
 }
@@ -12,8 +12,11 @@
 
 body{
     width: 100%;
-
-    @import 'partials/layout';
-    @import 'partials/colors';
+    background-color: #0d0d0d;
+    font-family: 'opens sans', sans-serif;
     @import 'partials/typography';
+    @import 'partials/colors';
+    @import 'partials/layout';
+    
+    
 }
